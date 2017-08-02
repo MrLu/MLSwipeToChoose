@@ -146,6 +146,54 @@ static const CGFloat ChoosePersonButtonVerticalPadding = 20.f;
                numberOfSharedFriends:1
              numberOfSharedInterests:1
                       numberOfPhotos:2],
+        [[Person alloc] initWithName:@"Finn"
+                               image:[UIImage imageNamed:@"finn"]
+                                 age:15
+               numberOfSharedFriends:3
+             numberOfSharedInterests:2
+                      numberOfPhotos:1],
+        [[Person alloc] initWithName:@"Jake"
+                               image:[UIImage imageNamed:@"jake"]
+                                 age:28
+               numberOfSharedFriends:2
+             numberOfSharedInterests:6
+                      numberOfPhotos:8],
+        [[Person alloc] initWithName:@"Fiona"
+                               image:[UIImage imageNamed:@"fiona"]
+                                 age:14
+               numberOfSharedFriends:1
+             numberOfSharedInterests:3
+                      numberOfPhotos:5],
+        [[Person alloc] initWithName:@"P. Gumball"
+                               image:[UIImage imageNamed:@"prince"]
+                                 age:18
+               numberOfSharedFriends:1
+             numberOfSharedInterests:1
+                      numberOfPhotos:2],
+        [[Person alloc] initWithName:@"Finn"
+                               image:[UIImage imageNamed:@"finn"]
+                                 age:15
+               numberOfSharedFriends:3
+             numberOfSharedInterests:2
+                      numberOfPhotos:1],
+        [[Person alloc] initWithName:@"Jake"
+                               image:[UIImage imageNamed:@"jake"]
+                                 age:28
+               numberOfSharedFriends:2
+             numberOfSharedInterests:6
+                      numberOfPhotos:8],
+        [[Person alloc] initWithName:@"Fiona"
+                               image:[UIImage imageNamed:@"fiona"]
+                                 age:14
+               numberOfSharedFriends:1
+             numberOfSharedInterests:3
+                      numberOfPhotos:5],
+        [[Person alloc] initWithName:@"P. Gumball"
+                               image:[UIImage imageNamed:@"prince"]
+                                 age:18
+               numberOfSharedFriends:1
+             numberOfSharedInterests:1
+                      numberOfPhotos:2]
     ];
 }
 

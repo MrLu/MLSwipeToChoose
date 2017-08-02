@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49A483B402C049E28055919D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 374A6AE5BCA048DDAD2A8A49 /* libPods.a */; };
+		0689D679DED7DCF9498348B2 /* libPods-LikedOrNope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 576FBEDB4ABC4963CCD7AF91 /* libPods-LikedOrNope.a */; };
+		08DF62981F31CBE200368753 /* ZLSwipeableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DF62971F31CBE200368753 /* ZLSwipeableView.m */; };
 		DA5B73E918F233EF00BB5F8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5B73E818F233EF00BB5F8E /* Foundation.framework */; };
 		DA5B73EB18F233EF00BB5F8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5B73EA18F233EF00BB5F8E /* CoreGraphics.framework */; };
 		DA5B73ED18F233EF00BB5F8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5B73EC18F233EF00BB5F8E /* UIKit.framework */; };
@@ -37,8 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		374A6AE5BCA048DDAD2A8A49 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E403FF028F2463D9A2E11C5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		08DF62961F31CBE200368753 /* ZLSwipeableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSwipeableView.h; sourceTree = "<group>"; };
+		08DF62971F31CBE200368753 /* ZLSwipeableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSwipeableView.m; sourceTree = "<group>"; };
+		576FBEDB4ABC4963CCD7AF91 /* libPods-LikedOrNope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LikedOrNope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F72CAA574E99E4C86B6DDF /* Pods-LikedOrNope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikedOrNope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LikedOrNope/Pods-LikedOrNope.debug.xcconfig"; sourceTree = "<group>"; };
+		C10FD5CEDABEE655A946C7BE /* Pods-LikedOrNope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikedOrNope.release.xcconfig"; path = "Pods/Target Support Files/Pods-LikedOrNope/Pods-LikedOrNope.release.xcconfig"; sourceTree = "<group>"; };
 		DA5B73E518F233EF00BB5F8E /* LikedOrNope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikedOrNope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5B73E818F233EF00BB5F8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DA5B73EA18F233EF00BB5F8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,7 +77,7 @@
 				DA5B73EB18F233EF00BB5F8E /* CoreGraphics.framework in Frameworks */,
 				DA5B73ED18F233EF00BB5F8E /* UIKit.framework in Frameworks */,
 				DA5B73E918F233EF00BB5F8E /* Foundation.framework in Frameworks */,
-				49A483B402C049E28055919D /* libPods.a in Frameworks */,
+				0689D679DED7DCF9498348B2 /* libPods-LikedOrNope.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E448AE3AB3944862EF63D0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58F72CAA574E99E4C86B6DDF /* Pods-LikedOrNope.debug.xcconfig */,
+				C10FD5CEDABEE655A946C7BE /* Pods-LikedOrNope.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA5B73DC18F233EF00BB5F8E = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +110,7 @@
 				DA5B740718F233EF00BB5F8E /* LikedOrNopeTests */,
 				DA5B73E718F233EF00BB5F8E /* Frameworks */,
 				DA5B73E618F233EF00BB5F8E /* Products */,
-				6E403FF028F2463D9A2E11C5 /* Pods.xcconfig */,
+				2E448AE3AB3944862EF63D0D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,7 +130,7 @@
 				DA5B73EA18F233EF00BB5F8E /* CoreGraphics.framework */,
 				DA5B73EC18F233EF00BB5F8E /* UIKit.framework */,
 				DA5B740118F233EF00BB5F8E /* XCTest.framework */,
-				374A6AE5BCA048DDAD2A8A49 /* libPods.a */,
+				576FBEDB4ABC4963CCD7AF91 /* libPods-LikedOrNope.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +140,8 @@
 			children = (
 				DA5B73F718F233EF00BB5F8E /* AppDelegate.h */,
 				DA5B73F818F233EF00BB5F8E /* AppDelegate.m */,
+				08DF62961F31CBE200368753 /* ZLSwipeableView.h */,
+				08DF62971F31CBE200368753 /* ZLSwipeableView.m */,
 				DA5B745718F239B700BB5F8E /* Models */,
 				DA5B745A18F239B700BB5F8E /* Views */,
 				DA5B745418F239B700BB5F8E /* Controllers */,
@@ -201,11 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA5B741118F233EF00BB5F8E /* Build configuration list for PBXNativeTarget "LikedOrNope" */;
 			buildPhases = (
-				7989DD9D1D4541818B62EB58 /* Check Pods Manifest.lock */,
+				9B95E2F66B98B870B290A768 /* [CP] Check Pods Manifest.lock */,
 				DA5B73E118F233EF00BB5F8E /* Sources */,
 				DA5B73E218F233EF00BB5F8E /* Frameworks */,
 				DA5B73E318F233EF00BB5F8E /* Resources */,
-				A91FF65CB21B4CFABCB79ED0 /* Copy Pods Resources */,
+				AF074293F5C05CF965FDB2EB /* [CP] Embed Pods Frameworks */,
+				0BF5C55F23F6911D027F3052 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +259,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = modocache;
 				TargetAttributes = {
+					DA5B73E418F233EF00BB5F8E = {
+						DevelopmentTeam = 8WKEQ2UHVJ;
+					};
 					DA5B73FF18F233EF00BB5F8E = {
 						TestTargetID = DA5B73E418F233EF00BB5F8E;
 					};
@@ -287,34 +306,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7989DD9D1D4541818B62EB58 /* Check Pods Manifest.lock */ = {
+		0BF5C55F23F6911D027F3052 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LikedOrNope/Pods-LikedOrNope-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A91FF65CB21B4CFABCB79ED0 /* Copy Pods Resources */ = {
+		9B95E2F66B98B870B290A768 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF074293F5C05CF965FDB2EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LikedOrNope/Pods-LikedOrNope-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -330,6 +364,7 @@
 				DA5B746018F239B700BB5F8E /* Person.m in Sources */,
 				DA5B73F518F233EF00BB5F8E /* main.m in Sources */,
 				DA5B746218F239B700BB5F8E /* ChoosePersonView.m in Sources */,
+				08DF62981F31CBE200368753 /* ZLSwipeableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,13 +480,15 @@
 		};
 		DA5B741218F233EF00BB5F8E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E403FF028F2463D9A2E11C5 /* Pods.xcconfig */;
+			baseConfigurationReference = 58F72CAA574E99E4C86B6DDF /* Pods-LikedOrNope.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8WKEQ2UHVJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LikedOrNope/LikedOrNope-Prefix.pch";
 				INFOPLIST_FILE = "LikedOrNope/LikedOrNope-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modocache.LikedOrNopelujinhao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -459,13 +496,15 @@
 		};
 		DA5B741318F233EF00BB5F8E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E403FF028F2463D9A2E11C5 /* Pods.xcconfig */;
+			baseConfigurationReference = C10FD5CEDABEE655A946C7BE /* Pods-LikedOrNope.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8WKEQ2UHVJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LikedOrNope/LikedOrNope-Prefix.pch";
 				INFOPLIST_FILE = "LikedOrNope/LikedOrNope-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modocache.LikedOrNopelujinhao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
