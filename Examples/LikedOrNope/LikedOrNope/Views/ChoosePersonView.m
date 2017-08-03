@@ -46,12 +46,12 @@ static const CGFloat ChoosePersonViewImageLabelWidth = 42.f;
     self = [super initWithFrame:frame options:options];
     if (self) {
         _person = person;
-        self.imageView.image = _person.image;
+//        self.imageView.image = _person.image;
 
         self.autoresizingMask = UIViewAutoresizingFlexibleHeight |
                                 UIViewAutoresizingFlexibleWidth |
                                 UIViewAutoresizingFlexibleBottomMargin;
-        self.imageView.autoresizingMask = self.autoresizingMask;
+//        self.imageView.autoresizingMask = self.autoresizingMask;
 
         [self constructInformationView];
     }

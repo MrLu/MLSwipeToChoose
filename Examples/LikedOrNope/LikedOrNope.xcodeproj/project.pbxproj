@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0689D679DED7DCF9498348B2 /* libPods-LikedOrNope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 576FBEDB4ABC4963CCD7AF91 /* libPods-LikedOrNope.a */; };
-		08DF62981F31CBE200368753 /* ZLSwipeableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DF62971F31CBE200368753 /* ZLSwipeableView.m */; };
+		08BA12911F32C63900090EE4 /* TestViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BA12901F32C63900090EE4 /* TestViewViewController.m */; };
+		08DF62981F31CBE200368753 /* MLSwipeableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DF62971F31CBE200368753 /* MLSwipeableView.m */; };
 		DA5B73E918F233EF00BB5F8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5B73E818F233EF00BB5F8E /* Foundation.framework */; };
 		DA5B73EB18F233EF00BB5F8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5B73EA18F233EF00BB5F8E /* CoreGraphics.framework */; };
 		DA5B73ED18F233EF00BB5F8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5B73EC18F233EF00BB5F8E /* UIKit.framework */; };
@@ -38,8 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08DF62961F31CBE200368753 /* ZLSwipeableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSwipeableView.h; sourceTree = "<group>"; };
-		08DF62971F31CBE200368753 /* ZLSwipeableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSwipeableView.m; sourceTree = "<group>"; };
+		08BA128F1F32C63900090EE4 /* TestViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewViewController.h; sourceTree = "<group>"; };
+		08BA12901F32C63900090EE4 /* TestViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewViewController.m; sourceTree = "<group>"; };
+		08DF62961F31CBE200368753 /* MLSwipeableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSwipeableView.h; sourceTree = "<group>"; };
+		08DF62971F31CBE200368753 /* MLSwipeableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSwipeableView.m; sourceTree = "<group>"; };
 		576FBEDB4ABC4963CCD7AF91 /* libPods-LikedOrNope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LikedOrNope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F72CAA574E99E4C86B6DDF /* Pods-LikedOrNope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikedOrNope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LikedOrNope/Pods-LikedOrNope.debug.xcconfig"; sourceTree = "<group>"; };
 		C10FD5CEDABEE655A946C7BE /* Pods-LikedOrNope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikedOrNope.release.xcconfig"; path = "Pods/Target Support Files/Pods-LikedOrNope/Pods-LikedOrNope.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,8 +143,10 @@
 			children = (
 				DA5B73F718F233EF00BB5F8E /* AppDelegate.h */,
 				DA5B73F818F233EF00BB5F8E /* AppDelegate.m */,
-				08DF62961F31CBE200368753 /* ZLSwipeableView.h */,
-				08DF62971F31CBE200368753 /* ZLSwipeableView.m */,
+				08DF62961F31CBE200368753 /* MLSwipeableView.h */,
+				08DF62971F31CBE200368753 /* MLSwipeableView.m */,
+				08BA128F1F32C63900090EE4 /* TestViewViewController.h */,
+				08BA12901F32C63900090EE4 /* TestViewViewController.m */,
 				DA5B745718F239B700BB5F8E /* Models */,
 				DA5B745A18F239B700BB5F8E /* Views */,
 				DA5B745418F239B700BB5F8E /* Controllers */,
@@ -363,8 +368,9 @@
 				DA5B745F18F239B700BB5F8E /* ChoosePersonViewController.m in Sources */,
 				DA5B746018F239B700BB5F8E /* Person.m in Sources */,
 				DA5B73F518F233EF00BB5F8E /* main.m in Sources */,
+				08BA12911F32C63900090EE4 /* TestViewViewController.m in Sources */,
 				DA5B746218F239B700BB5F8E /* ChoosePersonView.m in Sources */,
-				08DF62981F31CBE200368753 /* ZLSwipeableView.m in Sources */,
+				08DF62981F31CBE200368753 /* MLSwipeableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

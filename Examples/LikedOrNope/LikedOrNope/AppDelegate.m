@@ -24,6 +24,7 @@
 
 #import "AppDelegate.h"
 #import "ChoosePersonViewController.h"
+#import "TestViewViewController.h"
 
 @implementation AppDelegate
 
@@ -32,7 +33,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
-    self.window.rootViewController = [ChoosePersonViewController new];
+    self.window.rootViewController = [TestViewViewController new];
 
     return YES;
 }

@@ -42,13 +42,28 @@ CGFloat MDCDegreesToRadians(const CGFloat degrees) {
 
 CGRect MDCCGRectExtendedOutOfBounds(const CGRect rect,
                                     const CGRect bounds,
-                                    const CGPoint translation) {
+                                    const CGPoint translation,
+                                    const NSUInteger direction) {
     CGRect destination = rect;
     while (!CGRectIsNull(CGRectIntersection(bounds, destination))) {
-        destination = CGRectMake(CGRectGetMinX(destination) + translation.x,
-                                 CGRectGetMinY(destination) + translation.y,
-                                 CGRectGetWidth(destination),
-                                 CGRectGetHeight(destination));
+        if (direction>=2) { //XY轴
+            destination = CGRectMake(CGRectGetMinX(destination) + translation.x,
+                                     CGRectGetMinY(destination) + translation.y,
+                                     CGRectGetWidth(destination),
+                                     CGRectGetHeight(destination));
+        }
+        if (direction==0) { //X轴
+            destination = CGRectMake(CGRectGetMinX(destination) + translation.x,
+                                     CGRectGetMinY(destination),
+                                     CGRectGetWidth(destination),
+                                     CGRectGetHeight(destination));
+        }
+        if (direction==1) { //Y轴
+            destination = CGRectMake(CGRectGetMinX(destination),
+                                     CGRectGetMinY(destination) + translation.y,
+                                     CGRectGetWidth(destination),
+                                     CGRectGetHeight(destination));
+        }
     }
 
     return destination;

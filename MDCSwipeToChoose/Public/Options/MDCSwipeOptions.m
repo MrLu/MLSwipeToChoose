@@ -53,7 +53,7 @@
     return ^(MDCSwipeResult *state) {
         CGRect destination = MDCCGRectExtendedOutOfBounds(state.view.frame,
                                                           state.view.superview.bounds,
-                                                          state.translation);
+                                                          state.translation,2);
         [UIView animateWithDuration:duration
                               delay:0.0
                             options:options
